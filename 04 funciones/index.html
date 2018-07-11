@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Funciones</title>
+  <style>
+    * {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      /*Fracciones fr*/
+      /*grid-template: 300px 150px 300px / 1fr 1fr 1fr;*/
+      /* grid-template: 300px 100px 100px / repeat(4, 1fr); */
+      /*La funcion minmax controla el responsive, cuando el ancho sea grande el maximo es 1fr y cuando el ancho sea minimo llega a 100px*/
+      grid-template: 300px 100px 100px / repeat(4, minmax(100px, 1fr));
+      /*Tambien podemos decir que una columna sea minmax y las otras que sean de diferente medida*/
+      grid-template: 300px 100px 100px / minmax(220px, 1fr) 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px dashed black;
+    }
+    .item:nth-of-type(4) {
+      background: yellow;
+      overflow: auto;
+      display: grid;
+      grid-template: 50px 60px / 200px 150px;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item">contenido #1</div>
+    <div class="item">contenido #2</div>
+    <div class="item">contenido #3</div>
+    <div class="item">
+      <div class="item">subitem #1</div>
+      <div class="item">subitem #2</div>
+      <div class="item">subitem #3</div>
+      <div class="item">subitem #4</div>
+      <div class="item">subitem #5</div>
+    </div>
+    <div class="item">contenido #5</div>
+    <div class="item">contenido #6</div>
+    <div class="item">contenido #7</div>
+    <div class="item">contenido #8</div>
+    <div class="item">contenido #9</div>
+    <div class="item">contenido #10</div>
+    <div class="item">contenido #11</div>
+    <div class="item">contenido #12</div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Displays</title>
+  <style>
+    * {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-template: 18% 150px 300px / 50% 100px 100px;
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px dashed black;
+    }
+    .item:nth-of-type(4) {
+      background: yellow;
+      overflow: auto;
+      /*
+        Hereda la configuración del grid padre (aun no soportada)
+      display: subgrid;
+      display: inline-grid; Aun no soportada
+      */
+      display: grid;
+      grid-template: 18% 150px 300px / 50% 100px 100px;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item">contenido #1</div>
+    <div class="item">contenido #2</div>
+    <div class="item">contenido #3</div>
+    <div class="item">
+      <div class="item">subitem #1</div>
+      <div class="item">subitem #2</div>
+      <div class="item">subitem #3</div>
+      <div class="item">subitem #4</div>
+      <div class="item">subitem #5</div>
+    </div>
+    <div class="item">contenido #5</div>
+    <div class="item">contenido #6</div>
+    <div class="item">contenido #7</div>
+    <div class="item">contenido #8</div>
+    <div class="item">contenido #9</div>
+    <div class="item">contenido #10</div>
+    <div class="item">contenido #11</div>
+    <div class="item">contenido #12</div>
+  </section>
+</body>
+</html>

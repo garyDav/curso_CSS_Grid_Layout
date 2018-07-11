@@ -1,0 +1,244 @@
+<style>
+* {
+  font-family: Arial;
+}
+body {
+  margin: 0;
+}
+.post-content {
+  background: #fafafa;
+  /*Primero definimos al padre como grid*/
+  display: grid;
+  /*Definimos explícitamente cuantas columnas tendrá el grid*/
+  grid-template-columns: repeat(3, minmax(80px, 293px));
+  /*Alineando content, los valores que acepta son:
+    justify-content | align-content: start end center stretch space-around space-between space-evenly;
+  */
+  justify-content: center;
+  /*Espaciado entre celdas en filas y columnas*/
+  grid-gap: 28px;
+}
+.post-item {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.post-item:hover .puntaje {
+  display: flex;
+}
+.post-item figure{
+  margin: 0;
+}
+.post-item figure img{
+  width: 100%;
+  vertical-align: top;
+}
+.post-item .puntaje {
+  position: absolute;
+  background: #00000044;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.post-likes,
+.post-comments {
+  font-size: 18px;
+  width: 80px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+@media (max-width: 720px) {
+  .post-content {
+    grid-gap: 3px;
+  }
+}
+</style>
+<div class="post-content">
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/1" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/2" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/3" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/4" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/5" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/6" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/7" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/8" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/9" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/10" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/11" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/12" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/13" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/14" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/15" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+  <a href="#" class="post-item">
+    <figure>
+      <img src="http://lorempixel.com/400/400/animals/16" alt="Image">
+    </figure>
+    <span class="puntaje">
+      <p>
+        <span class="post-likes">M 818</span>
+        <span class="post-comments">C 18</span>
+      </p>
+    </span>
+  </a>
+</div>

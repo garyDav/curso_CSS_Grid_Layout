@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Instagram</title>
+  <style media="screen">
+    * {
+      font-family: Arial;
+    }
+    body {
+      margin: 0;
+    }
+    .post-content {
+      background: #fafafa;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(80px, 293px));
+      justify-content: center;
+      grid-gap: 28px;
+    }
+    .post-item {
+      display: inline-block;
+      /* height: 280px; */
+      /* width: 280px; */
+      position: relative;
+      text-decoration: none;
+    }
+    .post-item:hover .puntaje {
+      display: flex;
+    }
+    .post-item figure{
+      margin: 0;
+    }
+    .post-item figure img{
+      width: 100%;
+      vertical-align: top;
+    }
+    .post-item .puntaje {
+      position: absolute;
+      background: #00000044;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .post-likes,
+    .post-comments {
+      font-size: 18px;
+      width: 80px;
+      margin: 5px;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+    }
+
+
+
+    @media (max-width: 720px) {
+      .post-content {
+        grid-gap: 3px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="post-content">
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image1.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image2.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image3.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image4.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image1.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image2.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image3.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image4.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image1.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image2.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image3.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image4.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image1.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image2.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image3.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+    <a href="#" class="post-item">
+      <figure>
+        <img src="img/image4.jpg" alt="Image">
+      </figure>
+      <span class="puntaje">
+        <p>
+          <span class="post-likes">M 818</span>
+          <span class="post-comments">C 18</span>
+        </p>
+      </span>
+    </a>
+  </div>
+</body>
+</html>

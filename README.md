@@ -9,7 +9,7 @@ Dentro de estos **nuevos módulos CSS4** nos encontramos con **Grid Layout**, ta
 
 ## Soporte
 **CSS Grid Layout** cuenta con soporte en casi todos los navegadores actuales.
-![soporte](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/soporte.png)
+![soporte](./img/soporte.png)
 
 [Imagen de la web caniuse](https://caniuse.com/ "caniuse")
 
@@ -22,19 +22,19 @@ El aprendizaje de CSS Grid Layout puede ser un poco complicado al principio (inc
 
 * **Grid Lines:** Son las líneas horizontales y verticales que dividen el Grid. Éstas se encuentran a cada lado de una fila o columna.
 
-![Grid Lines](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/grid-lines.jpg)
+![Grid Lines](./img/grid-lines.jpg)
 
 * **Grid Tracks:** Es el espacio que hay entre dos Grid Lines, ya sean horizontales o verticales.
 
-![Grid Tracks](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/grid-tracks.png)
+![Grid Tracks](./img/grid-tracks.png)
 
 * **Grid Cell:** Es el espacio que se encuentra entre cuatro Grid Lines. La típica celda de una tabla.
 
-![Grid Cell](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/grid-cell.png)
+![Grid Cell](./img/grid-cell.png)
 
 * **Grid Area:** Se trata del espacio que hay entre cuatro Grid Lines que a su vez contiene varios Grid Cells.
 
-![Grid Area](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/grid-area.png)
+![Grid Area](./img/grid-area.png)
 
 ### ¿Por dónde empiezo?
 Mostraré unos ejemplos para entender mejor las propiedades básicas.
@@ -67,7 +67,7 @@ El código CSS3.
 ```
 > Cuando inspeccionemos el padre .grid-container veremos algo como esto
 
-![grid-basico](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/ejem/img1.png)
+![grid-basico](./img/ejem/img1.png)
 
 ## Grid Columns
 Las líneas verticales de elementos de la grilla se llama columnas.
@@ -87,7 +87,7 @@ El código CSS3.
 }
 ```
 
-![grid-gap](https://raw.githubusercontent.com/garyDav/CSS-Grid-Layout/master/img/ejem/img2.png)
+![grid-gap](./img/ejem/img2.png)
 
 > Grid Gaps tiene su forma reducida
 
